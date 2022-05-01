@@ -1,8 +1,10 @@
 import { Injectable } from '@nestjs/common';
 
+import { Status } from './models/status.model'
+
 @Injectable()
 export class AppService {
-  getHello(): string {
-    return 'Hello Bryan!';
+  getStatus(): Status {
+    return Status.RUNNING;
   }
 }
